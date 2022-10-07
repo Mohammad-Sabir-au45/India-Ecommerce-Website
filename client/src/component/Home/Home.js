@@ -22,7 +22,7 @@ const Home = () => {
   }, [dispatch, error, alert]);
 
   return (
-    <Fragment>
+    <>
       {loading ? (
         <Loader />
       ) : (
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </>
   );
 };
 
