@@ -5,7 +5,7 @@ const Footer = () => {
     <footer id="footer">
      <div >
         <p>High Quality is our first priority</p>
-        <p>Copyrights 2021 &copy; Mohammad Sabir</p>
+        <p>Copyrights 2021 &copy; Mohammad Sabir & Abhishek Joshi</p>
       </div>
     </footer>
   );

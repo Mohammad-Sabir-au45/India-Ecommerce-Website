@@ -15,7 +15,9 @@ process.on("uncaughtException", (err) => {
 
 
  //dotenv config
- require('dotenv').config({path:"backend/.env"})
+ require('dotenv').config()
+
+//  require('dotenv').config({path:"backend/.env"})
 
 
 

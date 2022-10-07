@@ -10,9 +10,7 @@ const path = require("path")
 
 //dotenv config
 
-require('dotenv').config({ path: "backend/.env" })
-
-
+require('dotenv').config()
 
 
 
@@ -39,13 +37,21 @@ app.use("/", productRouter)
 app.use("/", userRouter)
 app.use("/", orderRouter)
 
-app.use(express.static(path.join(__dirname, "../client/build")))
+// app.use(express.static(path.join(__dirname, "../client/build")))
+
+const buildPath = path.join(__dirname, '../client/build')
+app.use(express.static(buildPath))
 
 
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../client/build/index.html"))
+  res.sendFile(`${buildPath}/index.html`)
 })
+
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../client/build/index.html"))
+// })
 
 
 //routebase midleware for 
