@@ -1,13 +1,14 @@
 {
   "name": "india-ecommerce-website",
   "version": "1.0.0",
-  "engines" :{
-    "node":"16.14.2"},
+  "engines": {
+    "node": "16.14.2"
+  },
   "description": "ecommerce",
   "main": "backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild" : "cd client && npm install && npm run build && cd .. && npm install && npm start ",
+    "heroku-prebuild": "cd client && npm install && npm run build && cd .. && npm install && npm start ",
     "start": "node server.js"
   },
   "repository": {
