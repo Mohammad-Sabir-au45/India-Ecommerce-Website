@@ -22,11 +22,11 @@ const Home = () => {
   }, [dispatch, error, alert]);
 
   return (
-    <Fragment>
+    <>
       {loading ? (
         <Loader />
       ) : (
-        <Fragment>
+        <>
           <MetaData title="ECOMMERCE" />
 
           <div className="banner">
@@ -48,9 +48,9 @@ const Home = () => {
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
-        </Fragment>
+        </>
       )}
-    </Fragment>
+    </>
   );
 };
 

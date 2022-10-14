@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import Header from "./component/layout/Header/Header.js";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch  } from "react-router-dom";
 import WebFont from "webfontloader";
 import React from "react";
 import Footer from "./component/layout/Footer/Footer";
@@ -80,6 +80,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
+        {/* <Route exact path="/" element = {<Home />} /> */}
      
         <Route exact path="/product/:id" component={ProductDetails} />
         <Route exact path="/products" component={Products} />
