@@ -1,7 +1,7 @@
 # INDIA E-COMMERCE WEBSITE
 
 
-# DEPLOYED LINK - https://india-ecommerce.herokuapp.com/login
+# DEPLOYED LINK - https://india-ecommerce.herokuapp.com/#container
 
 Hi! This is git hub file of India E-commerce Website 
 
